@@ -1,0 +1,17 @@
+name: pipeline test
+
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome message
+        run: echo "my first pipeline test"
+
+      - name: List files
+        run: ls
+      - name: Read files
+        run: cat readme.yml
+      
